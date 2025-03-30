@@ -8,44 +8,41 @@ const ProductCards = ({ products }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = (product) => {
-    dispatch(addToCart(product))
-  }
+    dispatch(addToCart(product));
+  };
 
-  console.log(products);
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-9">
-      {products.map((product, index) => (
-        <div key={index} className="product__card">
+      {products.map((product) => (
+        <div key={product._id} className="product__card">
           <div className="relative">
             <Link to={`/shop/${product._id}`}>
               <img
                 src={product.image}
-                alt="product image"
+                alt={product.name}
                 className="max-h-96 md:h-64 w-full object-cover hover:scale-105 transition-all duration-300 rounded-md"
               />
             </Link>
-
-            {/* hiding the add to cart button */}
-            {/* <div className="hover:block absolute top-3 right-3">
-              <button
-              onClick={(e) => {
-                e.stopPropagation();
-                handleAddToCart(product)
-              }}>
-                <i className="ri-shopping-cart-line bg-primary p-1.5 text-white hover:bg-primary-dark rounded-sm"></i>
-              </button>
-            </div> */}
           </div>
 
-          {/* product description */}
+          {/* Product description */}
           <div className="product__card__content">
-            <h4>{product.name}</h4>
-            <p>
-              &#8358;{product.price}
-              {product.oldPrice ? <s> &#8358;{product?.oldPrice}</s> : null}
+            <h4 className="text-lg font-semibold">{product.name}</h4>
+            <p className="text-primary">
+              &#8358;{product.price}{" "}
+              {product.oldPrice && <s className="text-gray-500"> &#8358;{product.oldPrice}</s>}
             </p>
 
+            {/* Rating */}
             <RatingStars rating={product.rating} />
+
+            {/* Add to Cart Button */}
+            <button
+              className="mt-2 px-4 py-2 bg-primary text-white rounded-md hover:bg-opacity-90 transition"
+              onClick={() => handleAddToCart(product)}
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       ))}

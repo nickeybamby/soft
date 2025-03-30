@@ -4,15 +4,14 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
 import BottomNav from "./components/bottomNav/BottomNav";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 
-  useEffect(() => {
-          window.scrollTo(0, 0);
-      })
-      
+
   return (
     <>
+    <ScrollToTop />
       <Navbar />
       <Outlet />
       <BottomNav />

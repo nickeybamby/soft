@@ -1,14 +1,20 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import RatingStars from "../../../components/RatingStars";
+import products from "../../../data/products.json";
 
 const SingleProduct = () => {
   const { id } = useParams();
+  const product = products.find((p) => p._id.toString() === id);
+
+  if (!product) {
+    return <h2 className="text-center text-red-500">Product not found</h2>;
+  }
 
   return (
     <>
       <section className="section__container bg-primary-light">
-        <h2 className="section__header capitalize">Single Product Page</h2>
+        <h2 className="section__header capitalize">{product.name}</h2>
         <div className="section__subheader space-x-2">
           <span className="hover:text-primary">
             <Link to="/">Home</Link>
@@ -19,63 +25,47 @@ const SingleProduct = () => {
           </span>
           <i className="ri-arrow-right-s-line"></i>
           <span className="hover:text-primary">
-            <Link>Product name</Link>
+            <Link>{product.name}</Link>
           </span>
         </div>
       </section>
 
       <section className="section__container mt-8">
         <div className="flex flex-col items-center md:flex-row gap-8">
-          {/* product image */}
-          <div className="md:w-1/2 w-full">
+          {/* Product Image */}
+          <div className="">
             <img
-              src="https://images.unsplash.com/photo-1512201078372-9c6b2a0d528a?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-              className="rounded-md w-full h-auto"
+              src={product.image}
+              alt={product.name}
+              className="rounded-md w-[427px] h-auto"
             />
           </div>
 
           <div className="md:w-1/2 w-full">
-            <h3 className="text-2xl font-semibold mb-4">Product Name</h3>
+            <h3 className="text-2xl font-semibold mb-4">{product.name}</h3>
             <p className="text-xl text-primary mb-4">
-              ₦100 <s>₦130</s>
+              ₦{product.price} {product.oldPrice && <s>₦{product.oldPrice}</s>}
             </p>
-            <p
-              className="text-gray-700 mb-4
-            "
-            >
-              This is a product description
-            </p>
+            <p className="text-gray-700 mb-4">{product.description}</p>
 
-            {/* additional product info */}
+            {/* Additional product info */}
             <div>
               <p>
-                <strong>Category:</strong>accessories
+                <strong>Category:</strong> {product.category}
               </p>
               <p>
-                <strong>Color:</strong>black
+                <strong>Color:</strong> {product.color}
               </p>
               <div className="flex gap-1  items-center">
                 <strong>Rating</strong>
-                <RatingStars rating={"4.5"} />
+                <RatingStars rating={product.rating} />
               </div>
             </div>
-
-            {/* <button className="mt-6 px-6 py-3 bg-primary text-white rounded-md">
-                Add to Cart
-            </button> */}
           </div>
         </div>
       </section>
-
-      {/* display */}
-      {/* TODO: work with review when we have api */}
-      {/* <section className="section__container mt-8">
-        Reviews Here
-      </section> */}
     </>
   );
 };
 
 export default SingleProduct;
- 

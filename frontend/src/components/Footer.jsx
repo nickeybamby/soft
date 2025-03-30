@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import InstaImg1 from "../assets/instagram-1.jpg";
 import InstaImg2 from "../assets/instagram-2.jpg";
 import InstaImg3 from "../assets/instagram-3.jpg";
@@ -33,18 +34,16 @@ const Footer = () => {
 
         <div className="footer__col">
           <h4>COMPANY</h4>
-          <a href="#">Home</a>
-          <a href="#">Pages</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         <div className="footer__col">
           <h4>USEFUL LINK</h4>
-          <a href="#">Help</a>
-          <a href="#">Track My Order</a>
-          <a href="#">Shop</a>
-          <a href="#">Gallery</a>
+          <Link to = './contact'>Help</Link>
+         
         </div>
 
         <div className="footer__col">
