@@ -1,0 +1,109 @@
+
+[
+    {
+      "_id": 1,
+      "name": "Agbada",
+      "category": "clothes",
+      "description": "Stylish agbada with a fitted boba and sokoto.",
+      "price": 75000,
+      "oldPrice": 70000,
+      "image": "https://res.cloudinary.com/dt7fmvznd/image/upload/v1743237014/agba01_sm1h2j.png",
+      "color": "blue",
+      "rating": 4.5,
+      "author":"admin"
+    },
+    {
+      "_id": 2,
+      "name": "Three-piece Suit",
+      "category": "clothes",
+      "description": "Elegant three cut suite for special occasions.",
+      "price": 97000,
+      "oldPrice": 85000,
+      "image": "https://res.cloudinary.com/dt7fmvznd/image/upload/v1743237038/suit01_sbsbre.png",
+      "color": "white, black",
+      "rating": 4.9
+    },
+    {
+      "_id": 3,
+      "name": "Gold Necklace",
+      "category": "accessories",
+      "description": "Exquisite gold necklace with intricate design.",
+      "price": 80000,
+      "image": "https://images.unsplash.com/photo-1631097969294-c38afba59496?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "color": "gold",
+      "rating": 4.7
+    },
+    {
+      "_id": 4,
+      "name": "Senator",
+      "category": "clothes",
+      "description": "Well fitted three quarter senator cothing.",
+      "price": 45000,
+      "image": "https://res.cloudinary.com/dt7fmvznd/image/upload/v1743237017/senator01_u4h5rd.png",
+      "color": "blue",
+      "rating": 4.2
+    },
+    {
+      "_id": 5,
+      "name": "Agbada",
+      "category": "clothes",
+      "description": "Sleek and comfortable clothing.",
+      "price": 74000,
+      "oldPrice": 68000,
+      "image": "https://res.cloudinary.com/dt7fmvznd/image/upload/v1743237015/agba06_tvm8qn.png",
+      "color": "brown",
+      "rating": 4.3
+    },
+    {
+      "_id": 6,
+      "name": "Senator",
+      "category": "clothes",
+      "description": "Elegant attire for all kind of events .",
+      "price": 50000,
+      "image": "https://res.cloudinary.com/dt7fmvznd/image/upload/v1743237017/senator04_pnqedl.png",
+      "color": "black",
+      "rating": 4.4
+    },
+    {
+      "_id": 7,
+      "name": "French Coat",
+      "category": "clothes",
+      "description": "Long flowing coat for parties and events.",
+      "price": 85000,
+      "oldPrice": 78000,
+      "image": "https://res.cloudinary.com/dt7fmvznd/image/upload/v1743237038/suit07_fzhw3t.png",
+      "color": "navy blue",
+      "rating": 4.8
+    },
+    {
+      "_id": 8,
+      "name": "Agbada",
+      "category": "clothes",
+      "description": "White agbada with elegant and flawless finish.",
+      "price": 75000,
+      "image": "https://res.cloudinary.com/dt7fmvznd/image/upload/v1743237015/agba05_nnolec.png",
+      "color": "white",
+      "rating": 4.1
+    },
+    {
+      "_id": 9,
+      "name": "Suit",
+      "category": "clothes",
+      "description": "Fitted two cut suit for events.",
+      "price": 78000,
+      "image": "https://res.cloudinary.com/dt7fmvznd/image/upload/v1743237049/suit10_ihcn8i.png",
+      "color": "gold",
+      "rating": 4.6
+    },
+    {
+      "_id": 10,
+      "name": "Senator",
+      "category": "clothes",
+      "description": "Comfortable maxi clothes for events.",
+      "price": 47000,
+      "oldPrice": 35000,
+      "image": "https://res.cloudinary.com/dt7fmvznd/image/upload/v1743237037/senator10_pmmxio.png",
+      "color": "silver",
+      "rating": 4.2
+    }
+  ]
