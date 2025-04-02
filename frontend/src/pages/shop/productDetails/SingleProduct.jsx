@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import RatingStars from "../../../components/RatingStars";
 import products from "../../../data/products.json";
@@ -13,6 +14,11 @@ const SingleProduct = () => {
 
   return (
     <>
+    <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
       <section className="section__container bg-primary-light">
         <h2 className="section__header capitalize">{product.name}</h2>
         <div className="section__subheader space-x-2">
@@ -65,6 +71,7 @@ const SingleProduct = () => {
           </div>
         </div>
       </section>
+      </motion.div>
     </>
   );
 };

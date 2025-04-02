@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 import productsData from "../../data/products.json";
 import ProductCards from "./ProductCards";
 import ShopFiltering from "./ShopFiltering";
@@ -69,6 +69,11 @@ const clearFilters = () => {
 
   return (
     <>
+    <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
       <section className="section__container bg-primary-light">
         <h2 className="section__header capitalize">Shop Page</h2>
         <p className="section__subheader">
@@ -95,6 +100,7 @@ const clearFilters = () => {
           </div>
         </div>
       </section>
+      </motion.div>
     </>
   );
 };

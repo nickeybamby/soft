@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { slides } from "./data";
@@ -18,6 +19,11 @@ const Senator = () => {
 
   return (
     <>
+    <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
       <section className="section__container bg-primary-light">
         <h2 className="section__header capitalize">Senator</h2>
         <p className="section__subheader">
@@ -47,6 +53,7 @@ const Senator = () => {
           }}
         />
       </section>
+      </motion.div>
     </>
   )
 }

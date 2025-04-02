@@ -8,6 +8,7 @@ const Images = (props) => {
     };
 
   return (
+    
     <div className="images-container">
       {data.map((slide, index) => (
         <div
