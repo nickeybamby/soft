@@ -59,7 +59,8 @@ const SingleProduct = () => {
               <div className="flex gap-1  items-center">
                 <strong>Rating</strong>
                 <RatingStars rating={product.rating} />
-              </div>
+              </div> <br />
+              <div className="italic">To request for this outfit, please send a screenshot of it to our whatsapp <a href="" className="text-green-600 uppercase"> here</a> </div>
             </div>
           </div>
         </div>

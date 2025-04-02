@@ -37,12 +37,12 @@ const ProductCards = ({ products }) => {
             <RatingStars rating={product.rating} />
 
             {/* Add to Cart Button */}
-            <button
+            {/* <button
               className="mt-2 px-4 py-2 bg-primary text-white rounded-md hover:bg-opacity-90 transition"
               onClick={() => handleAddToCart(product)}
             >
               Add to Cart
-            </button>
+            </button> */}
           </div>
         </div>
       ))}

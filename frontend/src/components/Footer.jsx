@@ -59,8 +59,8 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="footer__bar">
-        Copyright &copy; 2025 Softouch Clothing. All right reserved | Powered by <a className="hover:text-primary" href="https://www.clinicraftstudios.xyz" target="_blank">Clinicraft Studios Tech.</a>
+      <div className="footer__bar mb-20">
+        Copyright &copy; 2025 Softouch Clothing. All right reserved | Powered by <a className="text-blue-600 transition-all 500s hover:text-primary" href="https://www.clinicraftstudios.xyz" target="_blank">Clinicraft Studios Tech.</a>
       </div>
 
     </>
