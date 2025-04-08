@@ -12,7 +12,7 @@ export default function Accordian() {
 
   return (
     <section className="accordian__container section__container">
-        <h3 className='pb-5 '>FAQs</h3>
+        <h4 className='pb-5 '>FAQs</h4>
       <div className="accordian__wrapper">
       <div className="accordian">
         {data && data.length > 0 ? (
