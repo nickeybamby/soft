@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 
 import products from '../../data/products.json'
 import ProductCards from '../shop/ProductCards';
+import Accordian from '../../components/accordian/Accordian';
 
 const CategoryPage = () => {
     const {categoryName} = useParams();
@@ -29,6 +30,8 @@ const CategoryPage = () => {
         <div className='section__container'>
             <ProductCards products={filteredProducts}/>
         </div>
+
+        <Accordian />
     </>
   )
 }

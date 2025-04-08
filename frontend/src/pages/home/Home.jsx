@@ -5,6 +5,7 @@ import Categories from "./Categories.jsx";
 import DealsSection from "./DealsSection.jsx";
 import HeroSection from "./HeroSection.jsx";
 import PromoBanner from "./PromoBanner.jsx";
+import Accordian from "../../components/accordian/Accordian.jsx";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <TrendingProducts />
         <DealsSection />
         <PromoBanner />
+        <Accordian />
       </motion.div>
     </>
   );

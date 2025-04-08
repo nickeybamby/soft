@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import RatingStars from "../../../components/RatingStars";
 import products from "../../../data/products.json";
+import Accordian from "../../../components/accordian/Accordian";
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -71,6 +72,8 @@ const SingleProduct = () => {
           </div>
         </div>
       </section>
+
+      <Accordian />
       </motion.div>
     </>
   );

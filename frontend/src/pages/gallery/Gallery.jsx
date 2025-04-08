@@ -13,6 +13,7 @@ import {
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Images from "./Images";
+import Accordian from "../../components/accordian/Accordian";
 
 const Gallery = () => {
   const [index, setIndex] = useState(-1);
@@ -72,6 +73,8 @@ const Gallery = () => {
             }}
           />
         </section>
+
+        <Accordian />
       </motion.div>
     </>
   );

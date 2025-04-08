@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Accordian from "../../components/accordian/Accordian";
 
 const variants = {
   initial: {
@@ -53,7 +54,7 @@ const Contact = () => {
             whileInView="animate"
           >
             <motion.a
-              href="https://wa.me/+2348"
+              href="https://wa.me/+2348134115489"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -76,6 +77,8 @@ const Contact = () => {
               <MdEmail />
             </motion.a>
           </motion.div>
+
+        <Accordian />
         </section>
       </motion.div>
     </>

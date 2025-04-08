@@ -16,7 +16,7 @@ const Footer = () => {
             <span>
               <i className="ri-map-pin-2-fill"></i>
             </span>
-            123, Ugborikoko, Warri, Delta State
+            77 Okere Ugborikoko, Warri, Delta State.
           </p>
           <p>
             <span>
@@ -28,7 +28,7 @@ const Footer = () => {
             <span>
               <i className="ri-phone-fill"></i>
             </span>
-            +2348012345678
+            +2348134115489
           </p>
         </div>
 
@@ -60,7 +60,7 @@ const Footer = () => {
       </footer>
 
       <div className="footer__bar mb-20">
-        Copyright &copy; 2025 Softouch Clothing. All right reserved | Powered by <a className="text-blue-600 transition-all 500s hover:text-primary" href="https://www.clinicraftstudios.xyz" target="_blank">Clinicraft Studios Tech.</a>
+         &copy; {new Date().getFullYear()}  Softouch Clothing. All right reserved | Powered by <a className="text-blue-600 transition-all 500s hover:text-primary" href="https://www.clinicraftstudios.xyz" target="_blank">Clinicraft Studios Tech.</a>
       </div>
 
     </>

@@ -13,6 +13,7 @@ import {
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Images from "./Images";
+import Accordian from "../../components/accordian/Accordian";
 
 const Senator = () => {
     const [index, setIndex] = useState(-1);
@@ -53,6 +54,8 @@ const Senator = () => {
           }}
         />
       </section>
+
+      <Accordian />
       </motion.div>
     </>
   )

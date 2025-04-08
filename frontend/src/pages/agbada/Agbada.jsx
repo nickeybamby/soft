@@ -13,6 +13,7 @@ import {
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Images from "./Images";
+import Accordian from "../../components/accordian/Accordian";
 
 const Agbada = () => {
   const [index, setIndex] = useState(-1);
@@ -38,6 +39,8 @@ const Agbada = () => {
             data={slides}
             onClick={(currentIndex) => setIndex(currentIndex)}
           />
+
+          <Accordian />
 
           <Lightbox
             plugins={[Captions, Download, Fullscreen, Zoom, Thumbnails]}
